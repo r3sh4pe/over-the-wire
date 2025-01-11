@@ -480,3 +480,26 @@ Username: bandit19 <br>
     0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
   </details>
 </details>
+
+## Level 20
+
+Username: bandit20 <br>
+
+- Pipe current password into netcat
+- Use suconnect
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit12@bandit.labs.overthewire.org -p 2220
+  echo "PASSWORD" | nc -l -p 1337
+  suconnect 1337
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+  </details>
+</details>
