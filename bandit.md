@@ -5,10 +5,10 @@
 Username: bandit0 <br>
 Password: bandit0
 
+-  Simply connect via `ssh` and look into the readme file.
+
 <details>
   <summary>The way</summary>
-
-  Simply connect via `ssh` and look into the readme file.
   
   ```shell
   ssh bandit0@bandit.labs.overthewire.org -p 2220
@@ -26,12 +26,12 @@ Password: bandit0
 
 Username: bandit1 <br>
 
+- Connect via `ssh`
+- Print flag to cli with `cat`
+- Have to add `\` in front of `-` to open / use file 
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Print flag to cli with `cat`
-  - Have to add `\` in front of `-` to open / use file 
   
   ```shell
   ssh bandit1@bandit.labs.overthewire.org -p 2220
@@ -49,12 +49,12 @@ Username: bandit1 <br>
 
 Username: bandit2 <br>
 
+- Connect via `ssh`
+- Print flag to cli with `cat`
+- Have to wrap filename in quotation marks because of the spaces
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Print flag to cli with `cat`
-  - Have to wrap filename in quotation marks because of the spaces
   
   ```shell
   ssh bandit2@bandit.labs.overthewire.org -p 2220
@@ -72,13 +72,13 @@ Username: bandit2 <br>
 
 Username: bandit3 <br>
 
+- Connect via `ssh`
+- Print flag to cli with `cat`
+- Have to use `\` in front of the dots becaues of the special meaning in linux filenames / filesystem
+
 <details>
   <summary>The way</summary>
 
-  - Connect via `ssh`
-  - Print flag to cli with `cat`
-  - Have to use `\` in front of the dots becaues of the special meaning in linux filenames / filesystem
-  
   ```shell
   ssh bandit3@bandit.labs.overthewire.org -p 2220
   cat inhere/\.\.\.Hiding-From-You
@@ -95,14 +95,14 @@ Username: bandit3 <br>
 
 Username: bandit4 <br>
 
+- Connect via `ssh`
+- Have to search for the human readable file
+- Option 1: By your own or
+- Option 2: `for`-loop
+- Print flag to cli with `cat`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Have to search for the human readable file
-  - Option 1: By your own or
-  - Option 2: `for`-loop
-  - Print flag to cli with `cat`
   
   ```shell
   ssh bandit4@bandit.labs.overthewire.org -p 2220
@@ -121,12 +121,12 @@ Username: bandit4 <br>
 
 Username: bandit5 <br>
 
+- Connect via `ssh`
+- Search for the flag with `file`
+- Print flag to cli with `cat`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Search for the flag with `file`
-  - Print flag to cli with `cat`
   
   ```shell
   ssh bandit5@bandit.labs.overthewire.org -p 2220
@@ -145,13 +145,13 @@ Username: bandit5 <br>
 
 Username: bandit6 <br>
 
+- Connect via `ssh`
+- Search for the flag with `file`
+- Use `2>/dev/null` to redirect errors
+- Print flag to cli with `cat`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Search for the flag with `file`
-  - Use `2>/dev/null` to redirect errors
-  - Print flag to cli with `cat`
   
   ```shell
   ssh bandit6@bandit.labs.overthewire.org -p 2220
@@ -170,11 +170,11 @@ Username: bandit6 <br>
 
 Username: bandit7 <br>
 
+- Connect via `ssh`
+- Search for the flag with `cat` and pipe to `grep`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Search for the flag with `cat` and pipe to `grep`
   
   ```shell
   ssh bandit7@bandit.labs.overthewire.org -p 2220
@@ -192,11 +192,11 @@ Username: bandit7 <br>
 
 Username: bandit8 <br>
 
+- Connect via `ssh`
+- Search for the flag with `cat` and pipe to `grep` and `uniq -u` afterwards
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Search for the flag with `cat` and pipe to `grep` and `uniq -u` afterwards
   
   ```shell
   ssh bandit8@bandit.labs.overthewire.org -p 2220
@@ -214,12 +214,12 @@ Username: bandit8 <br>
 
 Username: bandit9 <br>
 
+- Connect via `ssh`
+- Have to convert to string with `strings` and pipe it to `grep "=="`
+- Recognize the flag in the output
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Have to convert to string with `strings` and pipe it to `grep "=="`
-  - Recognize the flag in the output
   
   ```shell
   ssh bandit9@bandit.labs.overthewire.org -p 2220
@@ -237,11 +237,11 @@ Username: bandit9 <br>
 
 Username: bandit10 <br>
 
+- Connect via `ssh`
+- Decode text with `base64 -d`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Decode text with `base64 -d`
   
   ```shell
   ssh bandit10@bandit.labs.overthewire.org -p 2220
@@ -259,11 +259,11 @@ Username: bandit10 <br>
 
 Username: bandit11 <br>
 
+- Connect via `ssh`
+- Do the ROT13 with `tr`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Do the ROT13 with `tr`
   
   ```shell
   ssh bandit11@bandit.labs.overthewire.org -p 2220
@@ -281,18 +281,18 @@ Username: bandit11 <br>
 
 Username: bandit12 <br>
 
+- Connect via `ssh`
+- follow instruction and create temp dir with `mktemp -d` and copy data.txt
+- create file from the hexdump with `xdd -r`h
+- do the following until you get a text file:
+  -   check compression with `file`
+  -   if gzip extend name with .gz and decompress wit `gzip -d`
+  -   if bzip2 decompress with `bzip2 -d`
+  -   if tar extract with `tar -xf`
+  -   if ASCII text `cat` it
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - follow instruction and create temp dir with `mktemp -d` and copy data.txt
-  - create file from the hexdump with `xdd -r`h
-  - do the following until you get a text file:
-    -   check compression with `file`
-    -   if gzip extend name with .gz and decompress wit `gzip -d`
-    -   if bzip2 decompress with `bzip2 -d`
-    -   if tar extract with `tar -xf`
-    -   if ASCII text `cat` it
   
   ```shell
   ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -313,11 +313,11 @@ Username: bandit12 <br>
 
 Username: bandit13 <br>
 
+- Connect via `ssh`
+- Use `ssh -i` to login with ssh-key on localhost port 2220 as bandit14
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Use `ssh -i` to login with ssh-key on localhost port 2220 as bandit14
   
   ```shell
   ssh bandit13@bandit.labs.overthewire.org -p 2220
@@ -335,13 +335,13 @@ Username: bandit13 <br>
 
 Username: bandit14 <br>
 
+- Still connected via `ssh`
+- Search for files containing bandit 14 with `find`
+- cat /etc/bandit_pass/bandit14 for current password
+- open telnet session on port 30000 and paste the current password
+
 <details>
   <summary>The way</summary>
-
-  - Still connected via `ssh`
-  - Search for files containing bandit 14 with `find`
-  - cat /etc/bandit_pass/bandit14 for current password
-  - open telnet session on port 30000 and paste the current passwor
   
   ```shell
   find / -iname "bandit14" 2>/dev/null
@@ -360,12 +360,12 @@ Username: bandit14 <br>
 
 Username: bandit15 <br>
 
+- Connect via `ssh`
+- Connect to localhost port 30001 with `openssl`
+- Parse the current password
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Connect to localhost port 30001 with `openssl`
-  - Parse the current password
   
   ```shell
   ssh bandit15@bandit.labs.overthewire.org -p 2220
@@ -383,18 +383,17 @@ Username: bandit15 <br>
 
 Username: bandit16 <br>
 
+- Connect via `ssh`
+- Simple `nmap` scan to finde open ports
+- `nmap` version detection to find the ssl ports
+- Pipe the current password to `openssl`. This is necessary because the password starts with k (KEYUPDATE).
+- Create a ssh.key file with the response (private key)
+- If necessary change permissions to 700
+- Connect as bandit17 and get the password
+
 <details>
   <summary>The way</summary>
 
-  - Connect via `ssh`
-  - Simple `nmap` scan to finde open ports
-  - `nmap` version detection to find the ssl ports
-  - Pipe the current password to `openssl`. This is necessary because the password starts with k (KEYUPDATE).
-  - Create a ssh.key file with the response (private key)
-  - If necessary change permissions to 700
-  - Connect as bandit17 and get the password
-  - 
-  
   ```shell
   ssh bandit16@bandit.labs.overthewire.org -p 2220
   nmap -p 31000-32000 localhost
@@ -420,11 +419,11 @@ Username: bandit16 <br>
 
 Username: bandit17 <br>
 
+- Connect via `ssh`
+- Compare the files with `diff`
+
 <details>
   <summary>The way</summary>
-
-  - Connect via `ssh`
-  - Compare the files with `diff`
   
   ```shell
   ssh bandit17@bandit.labs.overthewire.org -p 2220
@@ -442,12 +441,13 @@ Username: bandit17 <br>
 
 Username: bandit18 <br>
 
+- Connect via `ssh` and specify shell
+- `cat` the readme file
+  
+
 <details>
   <summary>The way</summary>
 
-  - Connect via `ssh` and specify shell
-  - `cat` the readme file
-  
   ```shell
   ssh bandit18@bandit.labs.overthewire.org -p 2220 -t sh
   cat readme
@@ -457,5 +457,26 @@ Username: bandit18 <br>
     <summary>Password</summary>
 
     cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+  </details>
+</details>
+
+## Level 19
+
+Username: bandit19 <br>
+
+- bandit20-do can run every command as user bandit 20 so use it to get bandit20 password
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit19@bandit.labs.overthewire.org -p 2220
+  ./bandit20-do cat /etc/bandit_pass/bandit20
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
   </details>
 </details>
