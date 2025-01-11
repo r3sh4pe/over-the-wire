@@ -518,6 +518,7 @@ Username: bandit21 <br>
   ```shell
   ssh bandit21@bandit.labs.overthewire.org -p 2220
   cat /etc/cron.d/cronjob_bandit22
+  cat /usr/bin/cronjob_bandit22.sh
   cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
   ```
 
@@ -525,5 +526,34 @@ Username: bandit21 <br>
     <summary>Password</summary>
 
     tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+  </details>
+</details>
+
+## Level 22
+
+Username: bandit22 <br>
+
+- Look into the script
+- Do the commands wit `myname=bandit23`
+- Get the flag
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit22@bandit.labs.overthewire.org -p 2220
+  cat /usr/bin/cronjob_bandit23.sh
+  # On local machine
+  myname=bandit23
+  mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+  echo $mytarget
+  # Back on bandit
+  cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
   </details>
 </details>
