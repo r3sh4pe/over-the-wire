@@ -503,3 +503,27 @@ Username: bandit20 <br>
     EeoULMCra2q0dSkYj561DX7s1CpBuOBt
   </details>
 </details>
+
+## Level 21
+
+Username: bandit21 <br>
+
+- Search in /etc/crontab/ for a possible job / script
+- Look into cronjob_bandit22.sh
+- Get the flag
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit21@bandit.labs.overthewire.org -p 2220
+  cat /etc/cron.d/cronjob_bandit22
+  cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+  </details>
+</details>
