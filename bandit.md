@@ -599,3 +599,28 @@ Username: bandit23 <br>
     gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
   </details>
 </details>
+
+## Level 24
+
+Username: bandit24 <br>
+
+- create file with pw + pin
+- pipe the file into netcat
+- get flag
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit24@bandit.labs.overthewire.org -p 2220
+  cd # into temp folder
+  for i in $(seq -f "%04g" 0 9999); do echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i" >> pins; done
+  cat pins | nc localhost 30002
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+  </details>
+</details>
