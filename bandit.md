@@ -598,7 +598,7 @@ Username: bandit28 <br>
 Username: bandit29 <br>
 
 - Clone the repo (with the right port)
-- readme implies der could be development bransches
+- readme implies der could be development branches
 - list branches and serch for the flag
 - look into the file
 
@@ -614,6 +614,29 @@ Username: bandit29 <br>
   git branch -a # dev and sploits-dev seems interessting
   git checkout origin/dev
   cat README.md
+  ```
+
+</details>
+
+## Level 31
+
+Username: bandit30 <br>
+
+- Clone the repo (with the right port)
+- readme, branch list and commit log gives no hint
+- but we can find a tag
+- show the ref
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit30@bandit.labs.overthewire.org -p 2220
+  mktemp -d
+  cd # into temp dir
+  git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo
+  cd repo
+  git tag
+  git show secret
   ```
 
 </details>
