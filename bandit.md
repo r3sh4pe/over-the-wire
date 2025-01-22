@@ -564,7 +564,7 @@ Username: bandit27 <br>
   mktemp -d 
   cd # into temp dir
   git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
-  cat repo/README
+  cat repo/README.md
   ```
 
 </details>
@@ -584,11 +584,36 @@ Username: bandit28 <br>
   ssh bandit28@bandit.labs.overthewire.org -p 2220
   mktemp -d
   cd # into temp dir
-  git clone ssh://bandit28-git@localhost:2220/home/bandit27-git/repo
+  git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
   cd repo
   git log
   git checkout 3621de89d8eac9d3b64302bfb2dc67e9a566decd
-  cat repo/README
+  cat README.md
+  ```
+
+</details>
+
+## Level 30
+
+Username: bandit29 <br>
+
+- Clone the repo (with the right port)
+- readme implies der could be development bransches
+- list branches and serch for the flag
+- look into the file
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit29@bandit.labs.overthewire.org -p 2220
+  mktemp -d
+  cd # into temp dir
+  git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+  cd repo
+  git branch -a # dev and sploits-dev seems interessting
+  git checkout origin/dev
+  cat README.md
   ```
 
 </details>
