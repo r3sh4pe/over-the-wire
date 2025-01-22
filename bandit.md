@@ -568,3 +568,27 @@ Username: bandit27 <br>
   ```
 
 </details>
+
+## Level 29
+
+Username: bandit28 <br>
+
+- Clone the repo (with the right port)
+- check git history and checkout the interesting commit
+- look into the file
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit28@bandit.labs.overthewire.org -p 2220
+  mktemp -d
+  cd # into temp dir
+  git clone ssh://bandit28-git@localhost:2220/home/bandit27-git/repo
+  cd repo
+  git log
+  git checkout 3621de89d8eac9d3b64302bfb2dc67e9a566decd
+  cat repo/README
+  ```
+
+</details>
