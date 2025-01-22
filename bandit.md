@@ -643,7 +643,7 @@ Username: bandit30 <br>
 
 ## Level 32
 
-Username: bandit1 <br>
+Username: bandit31 <br>
 
 - Clone the repo (with the right port)
 - we have to commit and push a file according to README.md
@@ -665,6 +665,26 @@ Username: bandit1 <br>
   git add key.txt
   git commit * -m "A very short but and simple message which describes with few words what is happening / fixed or added by the commit so everybode can get the purpose of the commit"
   git push origin master
+  ```
+
+</details>
+
+## Level 33
+
+Username: bandit32 <br>
+
+- At first the variable `$0` should contain the path for the current shell
+- We can see after whoami that our shell runs with the `bandit33` rights
+- we can now simply get the flag
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit32@bandit.labs.overthewire.org -p 2220
+  $0
+  whoami # or ls -la
+  cat /etc/bandit_pass/bandit33
   ```
 
 </details>
