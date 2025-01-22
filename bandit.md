@@ -1,6 +1,6 @@
 # Bandit write-up
 
-## Level 0
+## Level 1
 
 Username: bandit0 <br>
 Password: bandit0
@@ -15,14 +15,9 @@ Password: bandit0
   vi readme
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
-  </details>
 </details>
 
-## Level 1
+## Level 2
 
 Username: bandit1 <br>
 
@@ -38,14 +33,9 @@ Username: bandit1 <br>
   cat .\/-
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-  </details>
 </details>
 
-## Level 2
+## Level 3
 
 Username: bandit2 <br>
 
@@ -61,14 +51,9 @@ Username: bandit2 <br>
   cat "spaces in this filename"
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
-  </details>
 </details>
 
-## Level 3
+## Level 4
 
 Username: bandit3 <br>
 
@@ -84,14 +69,9 @@ Username: bandit3 <br>
   cat inhere/\.\.\.Hiding-From-You
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-  </details>
 </details>
 
-## Level 4
+## Level 5
 
 Username: bandit4 <br>
 
@@ -110,14 +90,9 @@ Username: bandit4 <br>
   cat inhere/-file07
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-  </details>
 </details>
 
-## Level 5
+## Level 6
 
 Username: bandit5 <br>
 
@@ -134,14 +109,9 @@ Username: bandit5 <br>
   cat inhere/maybehere07/.file2
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
-  </details>
 </details>
 
-## Level 6
+## Level 7
 
 Username: bandit6 <br>
 
@@ -159,14 +129,9 @@ Username: bandit6 <br>
   cat /var/lib/dpkg/info/bandit7.password
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
-  </details>
 </details>
 
-## Level 7
+## Level 8
 
 Username: bandit7 <br>
 
@@ -181,14 +146,9 @@ Username: bandit7 <br>
   cat data.txt | grep "millionth"
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
-  </details>
 </details>
 
-## Level 8
+## Level 9
 
 Username: bandit8 <br>
 
@@ -203,14 +163,9 @@ Username: bandit8 <br>
   cat data.txt | sort | uniq -u
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
-  </details>
 </details>
 
-## Level 9
+## Level 10
 
 Username: bandit9 <br>
 
@@ -226,14 +181,9 @@ Username: bandit9 <br>
   strings data.txt | grep '=='
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
-  </details>
 </details>
 
-## Level 10
+## Level 11
 
 Username: bandit10 <br>
 
@@ -248,14 +198,9 @@ Username: bandit10 <br>
   base64 -d data.txt
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
-  </details>
 </details>
 
-## Level 11
+## Level 12
 
 Username: bandit11 <br>
 
@@ -270,14 +215,9 @@ Username: bandit11 <br>
   cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
-  </details>
 </details>
 
-## Level 12
+## Level 13
 
 Username: bandit12 <br>
 
@@ -302,14 +242,9 @@ Username: bandit12 <br>
   xdd -r data.txt data
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
-  </details>
 </details>
 
-## Level 13
+## Level 14
 
 Username: bandit13 <br>
 
@@ -324,14 +259,9 @@ Username: bandit13 <br>
   ssh -i sshkey.private bandit14@localhost -p 2220
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
-  </details>
 </details>
 
-## Level 14
+## Level 15
 
 Username: bandit14 <br>
 
@@ -349,14 +279,9 @@ Username: bandit14 <br>
   telnet localhost 30000
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
-  </details>
 </details>
 
-## Level 15
+## Level 16
 
 Username: bandit15 <br>
 
@@ -372,14 +297,9 @@ Username: bandit15 <br>
   openssl s_client -connect localhost:30001
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
-  </details>
 </details>
 
-## Level 16
+## Level 17
 
 Username: bandit16 <br>
 
@@ -407,15 +327,10 @@ Username: bandit16 <br>
   cat /etc/bandit_pass/bandit17
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
-  </details>
 </details>
 
 
-## Level 17
+## Level 18
 
 Username: bandit17 <br>
 
@@ -430,14 +345,9 @@ Username: bandit17 <br>
   diff password.old password.new
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
-  </details>
 </details>
 
-## Level 18
+## Level 19
 
 Username: bandit18 <br>
 
@@ -453,14 +363,9 @@ Username: bandit18 <br>
   cat readme
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
-  </details>
 </details>
 
-## Level 19
+## Level 20
 
 Username: bandit19 <br>
 
@@ -474,14 +379,9 @@ Username: bandit19 <br>
   ./bandit20-do cat /etc/bandit_pass/bandit20
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
-  </details>
 </details>
 
-## Level 20
+## Level 21
 
 Username: bandit20 <br>
 
@@ -497,14 +397,9 @@ Username: bandit20 <br>
   suconnect 1337
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    EeoULMCra2q0dSkYj561DX7s1CpBuOBt
-  </details>
 </details>
 
-## Level 21
+## Level 22
 
 Username: bandit21 <br>
 
@@ -522,14 +417,9 @@ Username: bandit21 <br>
   cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
-  </details>
 </details>
 
-## Level 22
+## Level 23
 
 Username: bandit22 <br>
 
@@ -551,15 +441,10 @@ Username: bandit22 <br>
   cat /tmp/8ca319486bfbbc3663ea0fbe81326349
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
-  </details>
 </details>
 
 
-## Level 23
+## Level 24
 
 Username: bandit23 <br>
 
@@ -593,14 +478,9 @@ Username: bandit23 <br>
   cat /tmp/tmp.random/bandit24
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
-  </details>
 </details>
 
-## Level 24
+## Level 25
 
 Username: bandit24 <br>
 
@@ -618,14 +498,9 @@ Username: bandit24 <br>
   cat pins | nc localhost 30002
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
-  </details>
 </details>
 
-## Level 25
+## Level 26
 
 Username: bandit25 <br>
 
@@ -649,14 +524,9 @@ Username: bandit25 <br>
   :e /etc/bandit_pass/bandit26
   ```
 
-  <details>
-    <summary>Password</summary>
-
-    s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
-  </details>
 </details>
 
-## Level 26
+## Level 27
 
 Username: bandit26 <br>
 
@@ -677,8 +547,24 @@ Username: bandit26 <br>
   ./bandit27-do cat /etc/bandit_pass/bandit27
   ```
 
-  <details>
-    <summary>Password</summary>
-    upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
-  </details>
+</details>
+
+## Level 28
+
+Username: bandit27 <br>
+
+- Clone the repo (with the right port)
+- look into the file
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit27@bandit.labs.overthewire.org -p 2220
+  mktemp -d 
+  cd # into temp dir
+  git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+  cat repo/README
+  ```
+
 </details>
