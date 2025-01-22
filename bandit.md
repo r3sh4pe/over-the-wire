@@ -640,3 +640,31 @@ Username: bandit30 <br>
   ```
 
 </details>
+
+## Level 32
+
+Username: bandit1 <br>
+
+- Clone the repo (with the right port)
+- we have to commit and push a file according to README.md
+- get the flag when file is pushed
+
+<details>
+  <summary>The way</summary>
+  
+  ```shell
+  ssh bandit31@bandit.labs.overthewire.org -p 2220
+  mktemp -d
+  cd # into temp dir
+  git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+  cd repo
+  cat README.md
+  echo README.md > key.txt
+  vim key.txt # Remove everything but the content
+  rm .gitignore # or delete only line
+  git add key.txt
+  git commit * -m "A very short but and simple message which describes with few words what is happening / fixed or added by the commit so everybode can get the purpose of the commit"
+  git push origin master
+  ```
+
+</details>
